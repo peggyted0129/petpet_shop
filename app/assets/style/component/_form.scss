@@ -1,0 +1,22 @@
+// subscribe 
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(213, 65, 0, 0.5);
+} 
+
+// utility
+.form-m {
+    height: 38px;
+}
+.form-l {
+    height: 48px;
+}
+
+// index <header>
+.header-choose .form-control:nth-child(2), 
+.header-choose .form-control:nth-child(3) {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+.header-choose .form-control:focus {
+    border-color: #f74b00;
+}

@@ -1,0 +1,53 @@
+---
+title: login
+layout: ./app/layout.ejs
+engine: ejs
+footer: false
+current: index
+---
+
+<section class="position-relative">
+    <div class="container py-6">
+      <div class="row">
+          <div class="col-md-5 header-log px-0 position-absolute d-none d-md-block">
+            <img class="header-img w-100" src="./assets/images/index-1.png" alt="">
+          </div> 
+          <div class="col-md-7 offset-md-5 col-12 text-success"> 
+            <h3 class="h2 font-weight-bolder mb-10">登入</h3>
+            <form class="needs-validation" novalidate>
+                <div class="form-group mb-8">
+                  <label for="user-account" class="text-dark font-weight-bolder">電子信箱</label>
+                  <input type="email" class="form-control" id="user-account" aria-describedby="user-account" placeholder="example@gmail.com" required>
+                  <div class="invalid-feedback">
+                    Please input account.
+                  </div>
+                </div>
+                <div class="form-group mb-8">
+                  <label for="user-password" class="text-dark font-weight-bolder">密碼</label>
+                  <input type="password" class="form-control" id="user-password" placeholder="請輸入密碼" required>
+                  <div class="invalid-feedback">
+                    Please input password.
+                  </div>
+                  <a class="login-forget h7 mt-2" href="#">忘記密碼</a>
+                </div>
+                <div class="form-group form-check mb-8">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label text-dark font-weight-bolder" for="exampleCheck1">記住我的帳號</label>
+                </div>
+                <div class="d-flex flex-md-row flex-column mb-10">
+                    <a href="#" class="login-link btn btn-outline-lgray py-1 w-md-50 w-100 mr-3 d-flex align-items-center justify-content-center mb-4">
+                        <img class="d-inline" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/facebook.svg" alt="">
+                        <span class="text-dark">Facebook</span>
+                    </a>
+                    <a href="#" class="login-link btn btn-outline-lgray py-1 w-md-50 w-100 d-flex align-items-center justify-content-center mb-4">
+                        <img class="d-inline" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/google.svg" alt="">
+                        <span class="text-dark">Google</span>
+                    </a>
+                </div>
+                <button type="submit" class="btn btn-warning w-50 mb-3">登入</button>
+                <a href="#" class="text-warning">還沒註冊嗎？</a>
+            </form>
+          </div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,140 @@
+.header-img {
+    height: 352px;
+}
+.header-title {
+    font-size: 24px;
+}
+.header-text {
+    font-size: 20px;
+}
+@keyframes sdb04 {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(0, 15px);
+    }
+    40% {
+      transform: translate(0, 0);
+    }
+  }
+@include mobile {
+    .header-text {
+        margin-left: -65px;
+    }
+    .header-title {
+        font-size: 28px;
+    }
+    .header-top {
+        right: 10%;
+        top: 125%;
+        animation: sdb04 2s infinite;
+    }
+}
+@include pad {
+    .header-choose .row {
+        height: calc(100vh - 64px);
+    }
+    .header-log {
+        top:0;
+        left: 0;
+        position: absolute;
+        & .header-img {
+            height: calc(100vh - 64px);
+        }
+    }
+    .header-title {
+        font-size: 32px;
+    }
+    .header-text {
+        margin-left: 0px;
+    }
+    .header-choose {
+        height: calc(100vh - 64px);
+        margin-top: 0px;
+    }
+    .header-top {
+        right: 15px;
+        top: 130%;
+    }
+}
+@media (min-width: 996px) {
+    .header-title {
+        font-size: 40px;
+    }
+    .header-text {
+        font-size: 24px;
+    }
+}
+
+/*-----------------------------*/
+@include mobile {
+    .baby {
+        margin-top: 229px;
+    }
+}
+@include pad {
+    .baby {
+        height: 500px;
+    }
+}
+.baby-pic {
+    height: 120px;
+    max-width: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.baby-pic-dog {
+    object-position: center 25%;
+}
+.baby-photo {
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*-----------------------------*/
+
+.banner {
+    @include banner('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/petpet-week8/index-9.jpeg',812px);
+    background-attachment: fixed;
+}
+.num-line {
+    text-align: center;
+}
+.num-title {
+    font-size: 36px;
+}
+.num-text {
+    font-size: 16px;
+}
+.num-line:before {
+    content: '';
+    display: block;
+    background: $white;
+    width: 3px;
+    height: 120px;
+    position: absolute;
+    left: 16px;
+}
+@include smobile {
+    .num-title {
+        font-size: 45px;
+    }
+    .num-text {
+        font-size: 20px;
+    }
+}
+@include pad {
+    .num-line:before {
+        height: 212px;
+    }
+    .num-line {
+        text-align: left;
+    }
+    .banner {
+        height: 584px;
+    }
+}
+
+

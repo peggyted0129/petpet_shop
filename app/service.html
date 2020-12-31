@@ -1,0 +1,258 @@
+---
+title: 寵物寄宿
+layout: ./app/layout.ejs
+engine: ejs
+footer: true
+current: index
+---
+
+<!--service logo-->
+<section class="container-md container-fluid mt-md-14 mt-0 mb-md-13 mb-4">
+    <div class="row flex-row-reverse align-items-center">
+        <div class="col-lg-8 col-md-7 col-12 px-0 pr-7 mb-4">
+            <img class="service-img" src="./assets/images/homestay-1.png" alt="" data-aos="zoom-in" data-aos-delay="500">
+        </div>
+        <div class="col-lg-4 col-md-5 col-12 text-success d-flex flex-column align-items-center">
+            <h2 class="font-weight-bolder mb-md-5 mb-1">寵物寄宿</h2>
+            <p class="h5 font-weight-bolder">給您的毛孩最舒適的環境</p>
+        </div>
+    </div>
+</section>
+
+<!--寵物寄宿-->
+<section class="bg-primary mb-13 mb-md-15">
+    <div class="container-md container-fluid">
+        <form class="pt-5">
+            <div class="form-row">
+                <div class="form-group col-md-2 col-5">
+                  <select id="Type" class="form-m form-control">
+                    <option value="貓">貓</option>
+                    <option value="狗">狗</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3 col-5 mr-1">
+                    <select id="State" class="form-m form-control">
+                      <option value="高雄市">高雄市</option>
+                      <option value="台北市">台北市</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3 col-6">
+                    <input class="form-m form-control px-4" type="date">
+                </div>
+                <span class="h6 mx-3 pt-2 d-none d-md-block">至</span>
+                <div class="form-group col-md-3 col-6">
+                    <input class="form-m form-control px-4" type="date">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--本月熱門寄宿-->
+<section class="container text-success position-relative mt-md-14 mt-0 mb-md-13 mb-11">
+    <h3 class="font-weight-bolder mb-md-5 mb-4">本月熱門寄宿</h3>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next material-icons d-md-block d-none position-absolute">
+        play_circle_filled
+      </div>
+      <div class="swiper-button-prev material-icons d-md-block d-none position-absolute">
+        play_circle_filled
+      </div>
+       
+       <!-- Swiper -->
+       <div class="swiper-container">
+         <div class="swiper-wrapper">
+           <ul  class="swiper-slide card-group d-flex flex-md-row flex-column">
+             <li class="shadow-sm card position-relative">
+               <img class="baby-pic card-img-top p-1 mb-8" src="./assets/images/index-2.jpeg" alt="...">
+               <img class="baby-photo position-absolute" src="./assets/images/person-1.png" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title font-weight-bolder">Jamie</h5>
+                 <p class="card-text h6 font-weight-bolder mb-4">寄宿、寵物行為訓練</p>
+                 <a href="./detail.html" class="btn btn-warning mb-7 w-75">預約</a>
+                 <ul class="d-flex justify-content-around">
+                   <li>
+                     <p class="h6 mb-4">獲得評價</p>
+                     <p><span class="h3 font-weight-bolder mr-1">198</span><span class="h7">則</span></p>
+                   </li>
+                   <li>
+                     <p class="h6 mb-4">已完成訂單</p>
+                     <p><span class="h3 font-weight-bolder mr-1">580</span><span class="h7">件</span></p>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+             <li class="shadow-sm card position-relative">
+               <img class="baby-pic baby-pic-dog card-img-top p-1 mb-8" src="./assets/images/index-3.jpeg" alt="...">
+               <img class="baby-photo position-absolute" src="./assets/images/person-2.png" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title font-weight-bolder">Eric</h5>
+                 <p class="card-text h6 font-weight-bolder mb-4">美容、寵物行為訓練</p>
+                 <a href="./detail.html" class="btn btn-warning mb-7 w-75">預約</a>
+                 <ul class="d-flex justify-content-around">
+                   <li>
+                     <p class="h6 mb-4">獲得評價</p>
+                     <p><span class="h3 font-weight-bolder mr-1">76</span><span class="h7">則</span></p>
+                   </li>
+                   <li>
+                     <p class="h6 mb-4">已完成訂單</p>
+                     <p><span class="h3 font-weight-bolder mr-1">208</span><span class="h7">件</span></p>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+             <li class="shadow-sm card position-relative">
+               <img class="baby-pic card-img-top p-1 mb-8" src="./assets/images/index-4.jpeg" alt="...">
+               <img class="baby-photo position-absolute" src="./assets/images/person-3.png" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title font-weight-bolder">Yvonne</h5>
+                 <p class="card-text h6 font-weight-bolder mb-4">寄宿、美容</p>
+                 <a href="./detail.html" class="btn btn-warning mb-7 w-75">預約</a>
+                 <ul class="d-flex justify-content-around">
+                   <li>
+                     <p class="h6 mb-4">獲得評價</p>
+                     <p><span class="h3 font-weight-bolder mr-1">52</span><span class="h7">則</span></p>
+                   </li>
+                   <li>
+                     <p class="h6 mb-4">已完成訂單</p>
+                     <p><span class="h3 font-weight-bolder mr-1">196</span><span class="h7">件</span></p>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </div>
+     <!-- </div> -->
+</section>
+
+<!--預約卡片-->
+<section class="container-md container-fluid text-success mb-13 mb-md-15">
+  <ul class="d-flex justify-content-between flex-wrap" data-aos="fade-up">  
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-2.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1 mb-1">寵屋屋</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">寄宿、美容洗澡、到府保姆</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+      </div>
+    </li>
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-3.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">毛孩好家</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">寄宿、美容洗澡、到府保姆</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-4.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">妖貓X僕SS</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">寄宿、美容洗澡、到府保姆</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>  
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-5.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">貓是主我是僕</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">寄宿、美容洗澡、到府保姆</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>        
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-6.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">汪汪隊</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">到府保姆、寵物行為訓練</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-7.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">卯咪</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">到府保姆、寵物行為訓練</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/index-2.jpeg" class="homestay-pic card-img-top" alt="..." style="height:128px">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">貓狗大戰</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">到府保姆、寵物行為訓練</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4">
+        <img src="./assets/images/homestay-8.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">萌寵底家</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">到府保姆、寵物行為訓練</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>
+    <li class="service-card hover-scale shadow card mb-lg-9 mb-md-6 mb-4 d-none d-md-block d-lg-none">
+        <img src="./assets/images/homestay-8.jpeg" class="homestay-pic card-img-top" alt="...">
+        <div class="card-body bg-gray">
+          <h5 class="card-title mb-1">萌寵底家</h5>
+          <div><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span><span class="material-icons h6 text-primary">grade</span></div>
+          <p class="card-text mt-2">到府保姆、寵物行為訓練</p>
+        </div>
+        <div class="card-footer bg-white d-flex justify-content-between py-0 px-0">
+          <button type="button" class="btn-text btn btn-outline-success w-50 border-0 font-weight-bolder">聯繫</button>
+          <button type="button" class="btn-text btn btn-outline-warning w-50 border-0 font-weight-bolder">預約</button>
+        </div>
+    </li>
+  </ul>
+  <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+  </nav>
+</section>

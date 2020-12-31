@@ -1,0 +1,47 @@
+.lh-1 {
+	line-height: 1.5;
+}
+.lh-2 {
+	line-height: 1.2;
+}
+.material-icons {
+	vertical-align: bottom;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+.bg-gray {
+	background:#f6f6f6;
+} 
+.h7 {  
+	font-size: $font-size-sm;
+}
+.display5 {
+	font-size: 48px;
+} 
+.radius-s {
+	border-radius: 5px;
+}
+.radius-m {
+	border-radius: 10px;
+}
+.btn-left-0 {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+.form-right-0 {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+.img-cover {
+    object-fit: cover;
+}
+
+// card:hover
+.hover-scale {
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.04);
+    }
+}

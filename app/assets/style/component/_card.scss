@@ -1,0 +1,43 @@
+// service & detail homestay-card-img
+.homestay-pic {
+    height: 128px;
+    object-fit: cover;
+}
+
+// service 住宿 card width
+.service-card {
+    width: 49.3%;
+}
+@include pad {
+    .service-card {
+        width: 32%;
+    }
+}
+@include desktop {
+    .service-card {
+        width: 23%;
+    }
+}
+
+
+// detail 住宿 card width
+.homestay-card {
+    width: 49%;
+}
+@include pad {
+    .homestay-card {
+        width: 31%;
+    }
+}
+@include desktop {
+    .homestay-card {
+        width: 32.5%;
+    }
+}
+
+
+
+
+
+
+
